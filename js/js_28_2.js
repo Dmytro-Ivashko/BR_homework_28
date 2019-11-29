@@ -33,7 +33,7 @@ class Marker {
 
 }
 
-class RefillMarker extends Marker{
+class RefillMarker extends Marker {
 
     refill(addCapacity) {
         if ((this.capacity + addCapacity) > 100) {
