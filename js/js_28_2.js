@@ -41,15 +41,14 @@ class RefillMarker extends Marker {
         } else {
             this.capacity += addCapacity;
         }
-        document.write(`<p style="color:green">You add ${addCapacity}</p>`);
+        document.write(`<p style="color:${this.color}">You add ${addCapacity}% to ${this.color} Marker. Now marker capacity: ${this.capacity}%</p>`);
     }
 }
 
 
 let bluMarker = new Marker("blue", 55);
-let redMarker = new Marker("blue", 35);
-let greenMarker = new Marker("blue", 45);
-
+let redMarker = new RefillMarker("red", 35);
+let greenMarker = new Marker("green", 45);
 
 
 console.log(bluMarker);
@@ -58,10 +57,21 @@ console.log(bluMarker);
 bluMarker.printText("Hello, World!!");
 bluMarker.printText("Hello, World!!!");
 bluMarker.printText("Hello, World!!!");
-bluMarker.refill(55);
+bluMarker.printText("Hello, World!!!");
+bluMarker.printText("Hello, World!!!");
+bluMarker.printText("Hello, World!!!");
+bluMarker.printText("Hello, World!!!");
+bluMarker.printText("Hello, World!!!");
+
+
 bluMarker.printText("Hello, World!!!");
 console.log(bluMarker);
 
+redMarker.printText('Hello world');
+redMarker.printText('Hello world');
+redMarker.printText('Hello world');
+redMarker.refill(34)
+greenMarker.printText("Hello, World!!!");
 
 
 
